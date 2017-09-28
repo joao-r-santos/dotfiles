@@ -110,6 +110,8 @@ set history=500
 " Enable folding (fold and unfold using `za`)
 set foldmethod=indent
 set foldlevel=99
+" space open/closes folds
+nnoremap <space> za
 
 set splitbelow
 set splitright
@@ -141,17 +143,30 @@ set expandtab
 highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
-" Ignore case when searching
-"set ignorecase
+"set ignorecase          " Ignore case when searching
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+
+" Leader Shortcuts {{{
+let mapleader="\"
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+vnoremap <leader>y "+y
+nnoremap <leader>p "+p
+" }}}
 
 " Show matching brackets when text indicator is over them
 set showmatch
 
-" Don't redraw while executing macros (good performance config)
-set lazyredraw
-
 set number " show line numbers in vim
 set relativenumber " show relative line numbers
+"set cursorline          " highlight current line
+
+" visual autocomplete for command menu
+set wildmenu
+
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
 
 " Put all temporary files under the same directory
 set backup
