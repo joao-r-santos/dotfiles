@@ -147,8 +147,9 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
+" shortcuts with leader as '\' by default
 " Leader Shortcuts {{{
-let mapleader="\"
+"let mapleader=","
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 vnoremap <leader>y "+y
@@ -173,6 +174,7 @@ set backup
 set backupdir=$HOME/.tmp,$HOME/tmp,/tmp,.,~/
 "set backupext=-vimbackup
 set undofile
+set undodir=$HOME/.tmp,$HOME/tmp,/tmp,.,~/
 
 
 
