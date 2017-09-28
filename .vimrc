@@ -147,20 +147,13 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
-" shortcuts with leader as '\' by default
-" Leader Shortcuts {{{
-"let mapleader=","
-" turn off search highlight
-nnoremap <leader><space> :nohlsearch<CR>
-vnoremap <leader>y "+y
-nnoremap <leader>p "+p
-" }}}
-
 " Show matching brackets when text indicator is over them
 set showmatch
 
 set number " show line numbers in vim
 set relativenumber " show relative line numbers
+highlight LineNr ctermfg=Grey ctermbg=0 guifg=DarkGrey guibg=Grey90
+highlight CursorLineNr cterm=bold ctermfg=White ctermbg=0 gui=bold guifg=Grey guibg=Grey90
 "set cursorline          " highlight current line
 
 " visual autocomplete for command menu
@@ -168,6 +161,16 @@ set wildmenu
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
+
+" shortcuts with leader as '\' by default
+" Leader Shortcuts {{{
+"let mapleader=","
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+vnoremap <leader>y "+y
+nnoremap <leader>p "+p
+nnoremap <leader>n :set invnumber invrelativenumber<CR>
+" }}}
 
 " Put all temporary files under the same directory
 set backup
