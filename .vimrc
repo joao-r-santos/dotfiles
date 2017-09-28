@@ -113,8 +113,8 @@ set foldlevel=99
 " space open/closes folds
 nnoremap <space> za
 
-set splitbelow
 set splitright
+set splitbelow
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
