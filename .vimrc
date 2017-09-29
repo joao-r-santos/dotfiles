@@ -172,7 +172,7 @@ nmap <leader>w :w!<cr>
 " Fast exit
 nmap <leader>q :qa<cr>
 " open/closes folds
-nnoremap <leader>z za
+"nnoremap <leader>z za
 " }}}
 
 " Put all temporary files under the same directory
