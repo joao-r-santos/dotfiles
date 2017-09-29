@@ -127,7 +127,7 @@ set ts=4
 set sts=4
 set sw=4
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.sh
     \ set autoindent
     "\ set textwidth=79
 
@@ -138,10 +138,6 @@ au BufNewFile,BufRead *.js, *.html, *.css, *.sql
 
 " replace tabs with spaces
 set expandtab
-
-" Mark extra whitespace as bad
-highlight BadWhitespace ctermbg=red guibg=darkred
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 "set ignorecase          " Ignore case when searching
 set incsearch           " search as characters are entered
@@ -154,7 +150,7 @@ set number " show line numbers in vim
 set relativenumber " show relative line numbers
 highlight LineNr ctermfg=Grey ctermbg=0 guifg=DarkGrey guibg=Grey90
 highlight CursorLineNr cterm=bold ctermfg=White ctermbg=0 gui=bold guifg=Grey guibg=Grey90
-"set cursorline          " highlight current line
+"set cursorline  " highlight current line
 
 " visual autocomplete for command menu
 set wildmenu
@@ -165,11 +161,18 @@ set lazyredraw
 " shortcuts with leader as '\' by default
 " Leader Shortcuts {{{
 "let mapleader=","
-" turn off search highlight
-nnoremap <leader><space> :nohlsearch<CR>
+" Disable highlight when <leader><space> is pressed
+map <leader><space> :nohlsearch<cr>
+map <leader>/ :nohlsearch<cr>
 vnoremap <leader>y "+y
 nnoremap <leader>p "+p
-nnoremap <leader>n :set invnumber invrelativenumber<CR>
+nmap <leader>n :set invnumber invrelativenumber<cr>
+" Fast saving
+nmap <leader>w :w!<cr>
+" Fast exit
+nmap <leader>q :qa<cr>
+" open/closes folds
+nnoremap <leader>z za
 " }}}
 
 " Put all temporary files under the same directory
@@ -178,6 +181,23 @@ set backupdir=$HOME/.tmp,$HOME/tmp,/tmp,.,~/
 "set backupext=-vimbackup
 set undofile
 set undodir=$HOME/.tmp,$HOME/tmp,/tmp,.,~/
+
+" Mark extra whitespace as bad
+highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.sh,*.sql,*.txt,*.js,*.html,*.css match BadWhitespace /\s\+$/
+
+" Delete trailing white space on save, useful for some filetypes ;)
+fun! CleanExtraSpaces()
+    let save_cursor = getpos(".")
+    let old_query = getreg('/')
+    silent! %s/\s\+$//e
+    call setpos('.', save_cursor)
+    call setreg('/', old_query)
+endfun
+
+if has("autocmd")
+    autocmd BufWritePre *.py,*.pyw,*.c,*.h,*.sh,*.sql,*.txt,*.js,*.html,*.css,*.wiki,*.coffee :call CleanExtraSpaces()
+endif
 
 
 
