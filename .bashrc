@@ -23,6 +23,7 @@ alias h='history | grep'
 
 alias purge='rm -i *~ .*~'
 alias rm='rm -i'
+alias pdf='evince'
 
 alias nopyc="find . -name '*.pyc' | xargs rm -f || true"
 
@@ -40,3 +41,6 @@ alias degemini="source deactivate gemini_future_airings_feed"
 alias atom="atom --use-gl=angle"
 alias google-chrome="google-chrome --use-gl=angle"
 alias google-chrome-stable="google-chrome-stable --use-gl=angle"
+
+# autojump shortcuts
+. /usr/share/autojump/autojump.sh

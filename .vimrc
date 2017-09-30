@@ -154,6 +154,8 @@ highlight CursorLineNr cterm=bold ctermfg=White ctermbg=0 gui=bold guifg=Grey gu
 
 " visual autocomplete for command menu
 set wildmenu
+set wildignorecase
+"set fileignorecase
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
@@ -181,6 +183,9 @@ set backupdir=$HOME/.tmp,$HOME/tmp,/tmp,.,~/
 "set backupext=-vimbackup
 set undofile
 set undodir=$HOME/.tmp,$HOME/tmp,/tmp,.,~/
+
+" Spell checking
+"set spell spelllang=en_us
 
 " Mark extra whitespace as bad
 highlight BadWhitespace ctermbg=red guibg=darkred
