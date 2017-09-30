@@ -1,10 +1,12 @@
-# case insensitive tab completion
-set completion-ignore-case on
+# Additional customizations
 
 # added by Miniconda2 installer
 export PATH="/home/joao/miniconda2/bin:$PATH"
 
+# case insensitive tab completion
+set completion-ignore-case on
 
+# some ls aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -15,16 +17,21 @@ alias lla='ls -lA'
 alias lt='ls -ltr'
 alias lta='ls -ltrA'
 alias l='ls -CF'
+
 alias df='df -h'
 alias h='history | grep'
+
 alias purge='rm -i *~ .*~'
 alias rm='rm -i'
 
+alias nopyc="find . -name '*.pyc' | xargs rm -f || true"
+
 
 # Conda environments
+alias deactivate="source deactivate"
+
 alias insight="source activate insight"
 alias deinsight="source deactivate insight"
-
 alias gemini="source activate gemini_future_airings_feed"
 alias degemini="source deactivate gemini_future_airings_feed"
 
