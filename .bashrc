@@ -25,6 +25,7 @@ alias purge='rm -i *~ .*~'
 alias rm='rm -i'
 alias pdf='evince'
 
+alias vimsplit="vim -O"
 alias nopyc="find . -name '*.pyc' | xargs rm -f || true"
 
 
