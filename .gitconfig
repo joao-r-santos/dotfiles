@@ -17,7 +17,7 @@
     gl = log --graph --pretty=format:'%Cred%h%Creset - %Cblue%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     sl = log --pretty=format:'%C(yellow)%h%Creset - %Cblue%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     l = log --pretty=tformat:\"%n%C(auto,yellow)%h%C(auto)%d%C(auto,reset) by %C(auto,blue)%cn%C(auto,reset), %C(auto,cyan)%ar%C(auto,reset)%n   %s\" --stat 
-    stat = log --stat --date=relative --abbrev-commit
+    stat = log --stat --date=local
     s = status --short
     dt = difftool --no-prompt
     dts = difftool --no-prompt --staged
