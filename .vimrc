@@ -115,6 +115,8 @@ nnoremap <space> za
 
 set splitright
 set splitbelow
+" make a diffsplit vertical by default
+set diffopt+=vertical
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
