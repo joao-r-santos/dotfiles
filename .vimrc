@@ -117,6 +117,8 @@ set splitright
 set splitbelow
 " make a diffsplit vertical by default
 set diffopt+=vertical
+" Make panes equal when the windows is resized
+"autocmd VimResized * wincmd =
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
