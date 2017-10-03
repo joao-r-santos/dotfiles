@@ -177,6 +177,8 @@ nmap <leader>w :w!<cr>
 nmap <leader>q :qa<cr>
 " open/closes folds
 "nnoremap <leader>z za
+" resize windows
+nnoremap <leader>= <C-W>=
 " }}}
 
 " Put all temporary files under the same directory
