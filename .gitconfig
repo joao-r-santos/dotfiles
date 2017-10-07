@@ -2,7 +2,7 @@
     name = Joao Santos
     email = joao@schireson.com
 [color]
-    ui = true
+    ui = auto
     status = auto
 [core]
     editor = vim
