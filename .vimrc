@@ -130,6 +130,7 @@ nnoremap <C-H> <C-W><C-H>
 set ts=4
 set sts=4
 set sw=4
+set smarttab
 
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.sh
     \ set autoindent
@@ -143,7 +144,8 @@ au BufNewFile,BufRead *.js, *.html, *.css, *.sql
 " replace tabs with spaces
 set expandtab
 
-"set ignorecase          " Ignore case when searching
+set ignorecase          " Ignore case when searching
+set smartcase           " Consider case if the search pattern contains upper case characters
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
