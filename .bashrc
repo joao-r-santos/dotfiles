@@ -44,4 +44,11 @@ alias google-chrome="google-chrome --use-gl=angle"
 alias google-chrome-stable="google-chrome-stable --use-gl=angle"
 
 # autojump shortcuts
-. /usr/share/autojump/autojump.sh
+if [ -f /usr/share/autojump/autojump.sh ]; then
+    source /usr/share/autojump/autojump.sh
+fi
+
+# powerline in bash
+#if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+#    source /usr/share/powerline/bindings/bash/powerline.sh
+#fi

@@ -1,8 +1,8 @@
 [user]
     name = Joao Santos
-    email = joao@schireson.com
+    email = joaorsantos@gmail.com
 [color]
-    ui = true
+    ui = auto
     status = auto
 [core]
     editor = vim
@@ -14,9 +14,12 @@
     tool = vimdiff
     algorithm = patience
 [alias]
-    gl = log --graph --pretty=format:'%Cred%h%Creset %Cblue%an%Creset %Cgreen(%cr)%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative
-    sl = log --pretty=format:'%C(yellow)%h%Creset %Cblue%an%Creset %Cgreen(%cr)%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative
-    l = log --pretty=tformat:\"%n%C(auto,yellow)%h%C(auto)%d%C(auto,reset) by %C(auto,blue)%cn%C(auto,reset), %C(auto,cyan)%ar%C(auto,reset)%n   %s\" --stat 
+    # Short graph log
+    gl = log --graph --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short
+    # Short one line log
+    sl = log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short
+    # Stat log with files modified
+    l = log --pretty=tformat:\"%n%C(yellow)%h by %Cgreen%cn %Cblue%ar   %Cred%d%Creset%n   %s\" --stat
     stat = log --stat --date=local
     b = branch -a
 
@@ -24,3 +27,8 @@
     d = diff --stat
     dt = difftool --no-prompt
     dts = difftool --no-prompt --staged
+
+    # Find commits by source code
+    fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short -S$1; }; f"
+    # Find commits by commit message
+    fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short --grep=$1; }; f"
