@@ -174,6 +174,7 @@ map <leader><space> :nohlsearch<cr>
 map <leader>/ :nohlsearch<cr>
 vnoremap <leader>y "+y
 nnoremap <leader>p "+p
+nnoremap <leader>P "+P
 nmap <leader>n :set invnumber invrelativenumber<cr>
 " Fast saving
 nmap <leader>w :w!<cr>

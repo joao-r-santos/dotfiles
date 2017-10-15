@@ -18,6 +18,7 @@
     sl = log --pretty=format:'%C(yellow)%h%Creset %Cblue%an%Creset %Cgreen(%cr)%Creset -%C(yellow)%d%Creset %s' --abbrev-commit --date=relative
     l = log --pretty=tformat:\"%n%C(auto,yellow)%h%C(auto)%d%C(auto,reset) by %C(auto,blue)%cn%C(auto,reset), %C(auto,cyan)%ar%C(auto,reset)%n   %s\" --stat 
     stat = log --stat --date=local
+    b = branch -a
 
     s = status --short
     d = diff --stat
