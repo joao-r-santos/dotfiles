@@ -214,6 +214,7 @@ if has("autocmd")
 endif
 
 
+"set encoding=utf-8
 
 " Add optional packages.
 "
@@ -224,3 +225,8 @@ packadd matchit
 " Set up powerline status bar
 set rtp+=~/miniconda2/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
+if has('gui_running')
+    set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11.5
+    "set guifont=Noto\ Mono\ for\ Powerline\ Medium\ 10
+    "set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
+endif
