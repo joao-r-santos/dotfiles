@@ -1,6 +1,6 @@
 [user]
     name = Joao Santos
-    email = joaorsantos@gmail.com
+    #email = 
 [color]
     ui = auto
     status = auto
