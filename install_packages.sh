@@ -26,6 +26,8 @@ sudo apt-get install vim vim-gnome vim-addon-manager vim-python-jedi
 
 # Useful programs
 sudo apt-get install atom audacious fbreader gimp postgresql transmission-common transmission-gtk
+pip install magic-wormhole
+#sudo apt install magic-wormhole
 
 # Extra Programs
 #dropbox
