@@ -30,12 +30,12 @@ alias nopyc="find . -name '*.pyc' | xargs rm -f || true"
 
 
 # Conda environments
+alias activate="source activate"
 alias deactivate="source deactivate"
 
 alias insight="source activate insight"
-alias deinsight="source deactivate insight"
 alias gemini="source activate gemini_future_airings_feed"
-alias degemini="source deactivate gemini_future_airings_feed"
+alias metrics="source activate vantage_metrics_pipeline"
 
 
 # Apply if using VirtualBox

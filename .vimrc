@@ -171,7 +171,7 @@ set lazyredraw
 "let mapleader=","
 " Disable highlight when <leader><space> is pressed
 map <leader><space> :nohlsearch<cr>
-map <leader>/ :nohlsearch<cr>
+"map <leader>/ :nohlsearch<cr>
 vnoremap <leader>y "+y
 nnoremap <leader>p "+p
 nnoremap <leader>P "+P
@@ -180,10 +180,13 @@ nmap <leader>n :set invnumber invrelativenumber<cr>
 nmap <leader>w :w!<cr>
 " Fast exit
 nmap <leader>q :qa<cr>
-" open/closes folds
+" Open/closes folds
 "nnoremap <leader>z za
-" resize windows
+" Resize windows
 nnoremap <leader>= <C-W>=
+" Comment / uncomment shortcut
+noremap <leader>/ :Commentary<cr>
+noremap <C-_> :Commentary<cr>
 " }}}
 
 " Put all temporary files under the same directory
