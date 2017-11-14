@@ -177,9 +177,12 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 nmap <leader>n :set invnumber invrelativenumber<cr>
 " Fast saving
-nmap <leader>w :w!<cr>
+nmap <leader>w :w<cr>
+nmap <leader>W :w!<cr>
 " Fast exit
 nmap <leader>q :qa<cr>
+nmap <leader>Q :qa!<cr>
+nmap <leader>x :x<cr>
 " Open/closes folds
 "nnoremap <leader>z za
 " Resize windows
