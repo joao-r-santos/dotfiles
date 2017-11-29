@@ -139,6 +139,7 @@ alias rm='rm -i'
 alias pdf='evince'
 
 alias vimsplit="vim -O"
+alias gvimsplit="gvim -O"
 alias nopyc="find . -name '*.pyc' | xargs rm -f || true"
 
 
