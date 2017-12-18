@@ -59,3 +59,4 @@ wget
 xclip
 xloadimage
 zip
+shellcheck
