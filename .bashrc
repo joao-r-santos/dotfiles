@@ -141,7 +141,7 @@ alias pdf='evince'
 alias vimsplit="vim -O"
 alias gvimsplit="gvim -O"
 alias nopyc="find . -name '*.pyc' | xargs rm -f || true"
-
+alias regexfind="find -regextype posix-extended -regex"
 
 # Conda environments
 alias activate="source activate"
