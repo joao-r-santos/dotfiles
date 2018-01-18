@@ -191,6 +191,8 @@ nnoremap <leader>= <C-W>=
 " Comment / uncomment shortcut
 noremap <leader>/ :Commentary<cr>
 noremap <C-_> :Commentary<cr>
+" Update the diff highlighting and folds
+nmap <leader>du :diffupdate<cr>
 " }}}
 
 " Put all temporary files under the same directory
