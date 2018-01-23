@@ -143,6 +143,10 @@ alias gvimsplit="gvim -O"
 alias nopyc="find . -name '*.pyc' | xargs rm -f || true"
 alias regexfind="find -regextype posix-extended -regex"
 
+# Add 'fuck' command to correct your previous console command
+eval $(thefuck --alias)
+#eval $(thefuck --alias --enable-experimental-instant-mode)
+
 # Conda environments
 alias activate="source activate"
 alias deactivate="source deactivate"
