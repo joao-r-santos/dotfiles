@@ -60,3 +60,4 @@ xclip
 xloadimage
 zip
 shellcheck
+thefuck
