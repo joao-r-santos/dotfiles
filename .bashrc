@@ -159,7 +159,9 @@ alias google-chrome="google-chrome --use-gl=angle"
 alias google-chrome-stable="google-chrome-stable --use-gl=angle"
 
 # autojump shortcuts
-. /usr/share/autojump/autojump.sh
+if [ -f /usr/share/autojump/autojump.sh ]; then
+    source /usr/share/autojump/autojump.sh
+fi
 
 if [ -f ~/.schireson/bash_schireson ]; then
     . ~/.schireson/bash_schireson
