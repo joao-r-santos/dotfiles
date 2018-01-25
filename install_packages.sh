@@ -1,6 +1,8 @@
-#------------------------#
-# Install extra packages #
-#------------------------#
+#!/bin/bash
+
+#------------------------------#
+# Install extra Linux packages #
+#------------------------------#
 
 # Ubuntu packages
 sudo apt-get install bash-completion build-essential gnome-tweak-tool ttf-mscorefonts-installer ttf-ubuntu-font-family ubuntu-restricted-addons ubuntu-restricted-extras
@@ -36,3 +38,10 @@ pip install magic-wormhole
 #skypeforlinux
 #spotify-client
 #vlc
+
+#-----------------------#
+# Install atom packages #
+#-----------------------#
+
+apm install --packages-file list_atom_packages.txt
+# apm install Hydrogen autocomplete-python highlight-selected hydrogen-launcher markdown-scroll-sync minimap minimap-find-and-replace minimap-highlight-selected platformio-ide-terminal project-manager python-tools
