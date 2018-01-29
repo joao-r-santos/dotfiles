@@ -1,12 +1,12 @@
-Hydrogen
+python-tools
 autocomplete-python
-highlight-selected
+platformio-ide-terminal
+Hydrogen
 hydrogen-launcher
-markdown-scroll-sync
+project-manager
 minimap
 minimap-find-and-replace
+highlight-selected
 minimap-highlight-selected
-platformio-ide-terminal
-project-manager
-python-tools
+markdown-scroll-sync
 
