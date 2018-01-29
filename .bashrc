@@ -132,31 +132,33 @@ alias lta='ls -ltrA'
 alias l='ls -CF'
 
 alias df='df -h'
+alias dus='du -hs * | sort -h'
 alias h='history | grep'
 
 alias purge='rm -i *~ .*~'
 alias rm='rm -i'
 alias pdf='evince'
 
-alias vimsplit="vim -O"
-alias gvimsplit="gvim -O"
-alias nopyc="find . -name '*.pyc' | xargs rm -f || true"
-alias regexfind="find -regextype posix-extended -regex"
+alias vimsplit='vim -O'
+alias gvimsplit='gvim -O'
+alias regexfind='find -regextype posix-extended -regex'
+# alias rmpyc='find . -type f -name "*.pyc" | xargs rm -f || true'
+alias rmpyc='find . -type f -name "*.pyc" -print -delete'
 
 # Add 'fuck' command to correct your previous console command
 eval $(thefuck --alias)
 #eval $(thefuck --alias --enable-experimental-instant-mode)
 
 # Conda environments
-alias activate="source activate"
-alias deactivate="source deactivate"
-# alias insight="source activate insight"
+alias activate='source activate'
+alias deactivate='source deactivate'
+# alias insight='source activate insight'
 
 
 # Apply if using VirtualBox
-alias atom="atom --use-gl=angle"
-alias google-chrome="google-chrome --use-gl=angle"
-alias google-chrome-stable="google-chrome-stable --use-gl=angle"
+alias atom='atom --use-gl=angle'
+alias google-chrome='google-chrome --use-gl=angle'
+alias google-chrome-stable='google-chrome-stable --use-gl=angle'
 
 # autojump shortcuts
 if [ -f /usr/share/autojump/autojump.sh ]; then
