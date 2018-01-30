@@ -44,4 +44,4 @@ pip install magic-wormhole
 #-----------------------#
 
 apm install --packages-file list_atom_packages.txt
-# apm install Hydrogen autocomplete-python highlight-selected hydrogen-launcher markdown-scroll-sync minimap minimap-find-and-replace minimap-highlight-selected platformio-ide-terminal project-manager python-tools
+# apm install python-tools autocomplete-python platformio-ide-terminal Hydrogen hydrogen-launcher project-manager minimap minimap-find-and-replace highlight-selected minimap-highlight-selected markdown-scroll-sync last-cursor-position
