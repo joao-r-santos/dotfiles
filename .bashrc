@@ -150,8 +150,8 @@ eval $(thefuck --alias)
 #eval $(thefuck --alias --enable-experimental-instant-mode)
 
 # Conda environments
-alias activate='source activate'
-alias deactivate='source deactivate'
+alias condaactivate='source activate'
+alias condadeactivate='source deactivate'
 # alias insight='source activate insight'
 
 
