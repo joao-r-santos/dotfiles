@@ -5,7 +5,7 @@
 #------------------------------#
 
 # Ubuntu packages
-sudo apt-get install bash-completion build-essential gnome-tweak-tool ttf-mscorefonts-installer ttf-ubuntu-font-family ubuntu-restricted-addons ubuntu-restricted-extras
+sudo apt-get install bash-completion build-essential gnome-tweak-tool ttf-mscorefonts-installer ttf-ubuntu-font-family ubuntu-restricted-addons ubuntu-restricted-extras dconf-tools
 
 # Regular packages
 sudo apt-get install aspell autojump bzip2 dos2unix fdupes git gitk gzip hyphen-en-us lmodern powerline screen sed socat tree unrar unzip wget xclip zip shellcheck thefuck
