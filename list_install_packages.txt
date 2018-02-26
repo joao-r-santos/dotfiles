@@ -62,3 +62,4 @@ zip
 shellcheck
 thefuck
 dconf-tools
+cups-pdf

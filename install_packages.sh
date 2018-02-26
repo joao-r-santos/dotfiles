@@ -17,7 +17,7 @@ sudo apt-get install python-jedi python-pip
 sudo apt-get install g++ gcc gfortran python
 
 # pdf & image packages
-sudo apt-get install diffpdf eog evince imagemagick meld pdftk xloadimage a2ps ps2eps ps2pdf psutils
+sudo apt-get install diffpdf eog evince imagemagick meld pdftk xloadimage a2ps ps2eps ps2pdf psutils cups-pdf
 
 # Latex specific packages
 sudo apt-get install latexdiff tex-common texlive texlive-full texmaker texmaker-data
