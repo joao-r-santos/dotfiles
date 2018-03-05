@@ -133,7 +133,7 @@ alias l='ls -CF'
 
 alias df='df -h'
 alias dus='du -hs * | sort -h'
-alias h='history | grep'
+alias h='history | grep -i'
 
 alias purge='rm -i *~ .*~'
 alias rm='rm -i'
@@ -144,6 +144,15 @@ alias gvimsplit='gvim -O'
 alias regexfind='find -regextype posix-extended -regex'
 # alias rmpyc='find . -type f -name "*.pyc" | xargs rm -f || true'
 alias rmpyc='find . -type f -name "*.pyc" -print -delete'
+
+alias savesession='pwd >> ~/terminal_sessions'
+cdsession() {
+    if [ -z "${1}" ]; then
+        sed '/^#/d' ~/terminal_sessions | sed '/^$/d'
+    else
+        cd $(sed '/^#/d' ~/terminal_sessions | sed '/^$/d' | grep -i "$1" | sed '1!d')
+    fi
+}
 
 # Add 'fuck' command to correct your previous console command
 eval $(thefuck --alias)
