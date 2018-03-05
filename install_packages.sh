@@ -45,3 +45,14 @@ pip install magic-wormhole cheat
 
 apm install --packages-file list_atom_packages.txt
 # apm install python-tools autocomplete-python platformio-ide-terminal Hydrogen hydrogen-launcher project-manager minimap minimap-find-and-replace highlight-selected minimap-highlight-selected markdown-scroll-sync last-cursor-position
+
+#---------------------------------#
+# Jupyter notebooks configuration #
+#---------------------------------#
+
+# The default config file is found at: ~/.jupyter/jupyter_notebook_config.py
+# If you don’t have this file, run
+jupyter notebook --generate-config
+
+mv ~/.jupyter/jupyter_notebook_config.py ~/.jupyter/jupyter_notebook_config.py.bak
+cat extra_jupyter_config.py ~/.jupyter/jupyter_notebook_config.py.bak > ~/.jupyter/jupyter_notebook_config.py
