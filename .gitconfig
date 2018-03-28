@@ -21,12 +21,22 @@
     # Stat log with files modified
     l = log --pretty=tformat:\"%n%C(yellow)%h by %Cgreen%cn %Cblue%ar   %Cred%d%Creset%n   %s\" --stat
     stat = log --stat --date=local
-    b = branch -a
 
+    b = branch -a
     s = status --short
     d = diff --stat
     dt = difftool --no-prompt
     dts = difftool --no-prompt --staged
+
+    # List ignored files
+    ign = ls-files -o -i --exclude-standard
+
+    # List all git tags ordered by date
+    tags = tag --sort=-creatordate --format='%(creatordate:short)  %(refname:strip=2)'
+    logtags = log --date-order --tags --simplify-by-decoration --pretty=format:'%C(yellow)%h  %Cblue%cd  %Creset%d' --date=format-local:"%Y-%m-%d"
+
+    # Uncommit previous local `git commit`
+    uncommit = reset HEAD~1 --mixed
 
     # Find commits by source code
     fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short -S$1; }; f"
