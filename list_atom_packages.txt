@@ -10,3 +10,4 @@ highlight-selected
 minimap-highlight-selected
 markdown-scroll-sync
 last-cursor-position
+MagicPython

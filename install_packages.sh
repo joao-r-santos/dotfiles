@@ -44,7 +44,8 @@ pip install magic-wormhole cheat
 #-----------------------#
 
 apm install --packages-file list_atom_packages.txt
-# apm install python-tools autocomplete-python platformio-ide-terminal Hydrogen hydrogen-launcher project-manager minimap minimap-find-and-replace highlight-selected minimap-highlight-selected markdown-scroll-sync last-cursor-position
+# apm install python-tools autocomplete-python platformio-ide-terminal Hydrogen hydrogen-launcher project-manager minimap minimap-find-and-replace highlight-selected minimap-highlight-selected markdown-scroll-sync last-cursor-position MagicPython
+# If installing MagicPython, disable the built-in language-python package
 
 #---------------------------------#
 # Jupyter notebooks configuration #
