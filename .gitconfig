@@ -15,8 +15,8 @@
     algorithm = patience
 [alias]
     # Short graph log
-    gl = log --graph --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short
-    glall = log --graph --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short --all
+    gl = log --graph --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short --all
+    # gl = log --graph --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short
     # Short one line log
     sl = log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short
     # Stat log with files modified
@@ -25,6 +25,7 @@
 
     b = branch -a
     s = status --short
+    st = status
     d = diff --stat
     dd = diff -p --stat
     dt = difftool --no-prompt
