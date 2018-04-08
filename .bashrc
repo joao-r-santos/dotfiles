@@ -127,8 +127,14 @@ alias ....='cd ../../..'
 alias ll='ls -l'
 alias la='ls -A'
 alias lla='ls -lA'
+# sort by modification time
 alias lt='ls -ltr'
+alias lth='ls -ltrh'
 alias lta='ls -ltrA'
+# sort by size
+alias lS='ls -lSr'
+alias lSh='ls -lSrh'
+alias lsh='ls -lSrh'
 alias l='ls -CF'
 
 alias df='df -h'
