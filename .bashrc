@@ -156,7 +156,7 @@ cdsession() {
     if [ -z "${1}" ]; then
         sed '/^#/d' ~/terminal_sessions | sed '/^$/d'
     else
-        cd $(sed '/^#/d' ~/terminal_sessions | sed '/^$/d' | grep -i "$1" | sed '1!d')
+        cd "$(sed '/^#/d' ~/terminal_sessions | sed '/^$/d' | grep -i "${1}" | sed '1!d')"
     fi
 }
 
