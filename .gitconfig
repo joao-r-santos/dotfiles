@@ -13,10 +13,16 @@
 [diff]
     tool = vimdiff
     algorithm = patience
+[difftool "bc4"]
+	path = 'C:/Program Files/Beyond Compare 4/BComp.exe'
+	cmd = 'C:/Program Files/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
+[mergetool "bc4"]
+	path = 'C:/Program Files/Beyond Compare 4/BComp.exe'
+	cmd = 'C:/Program Files/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 [alias]
     # Short graph log
-    gl = log --graph --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short --all
-    # gl = log --graph --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short
+    gl = log --graph --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short
+    gla = log --graph --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short --all
     # Short one line log
     sl = log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d%Creset' --decorate --date=short
     # Stat log with files modified
