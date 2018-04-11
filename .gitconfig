@@ -8,6 +8,8 @@
     editor = vim
 [push]
     default = simple
+[pull]
+    rebase = preserve
 [merge]
     tool = vimdiff
 [diff]
