@@ -15,6 +15,11 @@
 [diff]
     tool = vimdiff
     algorithm = patience
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+[mergetool "meld"]
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+    # cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
 [difftool "bc4"]
     path = 'C:/Program Files/Beyond Compare 4/BComp.exe'
     cmd = 'C:/Program Files/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
@@ -36,6 +41,7 @@
     st = status
     d = diff --stat
     dd = diff -p --stat
+    ds = diff -p --staged
     dt = difftool --no-prompt
     dts = difftool --no-prompt --staged
 
