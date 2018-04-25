@@ -1,6 +1,9 @@
+# If you want to auto-save .html and .py versions of your notebook
+# save this code in the file .jupyter/jupyter_notebook_config.py
+# Modified from: https://github.com/ipython/ipython/issues/8009
+
 c = get_config()
-### If you want to auto-save .html and .py versions of your notebook:
-# modified from: https://github.com/ipython/ipython/issues/8009
+
 import os
 from subprocess import check_call
 
