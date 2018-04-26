@@ -63,3 +63,4 @@ shellcheck
 thefuck
 dconf-tools
 cups-pdf
+jq
