@@ -129,6 +129,8 @@ nnoremap <C-H> <C-W><C-H>
 " tab navigation
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
+"nnoremap - :tabprevious<CR>
+"nnoremap = :tabnext<CR>
 " move tabs
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
