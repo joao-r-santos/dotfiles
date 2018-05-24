@@ -163,11 +163,11 @@ set showmatch
 
 set number              " show line numbers in vim
 set relativenumber      " show relative line numbers
-set cursorline          " highlight current line
+" set cursorline          " highlight current line
 set cursorcolumn        " highlight current column
 highlight LineNr ctermfg=Grey ctermbg=0 guifg=DarkGrey guibg=Grey90
 highlight CursorLineNr cterm=bold ctermfg=White ctermbg=0 gui=bold guifg=Grey guibg=Grey90
-highlight CursorLine cterm=None ctermbg=Black guibg=Grey95
+" highlight CursorLine cterm=None ctermbg=Black guibg=Grey95
 highlight CursorColumn cterm=None ctermbg=Black guibg=Grey95
 
 " visual autocomplete for command menu
