@@ -35,6 +35,8 @@
     # Stat log with files modified
     l = log --pretty=tformat:\"%n%C(yellow)%h by %Cgreen%cn %Cblue%ar   %Cred%d%Creset%n   %s\" --stat
     stat = log --stat --date=local
+    # List all commits where a file was changed
+    lf = "!f() { git log --pretty=format:'%h' --follow $1 | xargs git show --pretty=tformat:\"%n%C(yellow)%h by %Cgreen%cn %Cblue%ar   %Cred%d%Creset%n   %s\" --stat; }; f"
 
     b = branch -a
     s = status --short
