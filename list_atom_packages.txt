@@ -11,3 +11,8 @@ minimap-highlight-selected
 markdown-scroll-sync
 last-cursor-position
 MagicPython
+git-diff
+minimap-git-diff
+split-diff
+minimap-split-diff
+git-history
