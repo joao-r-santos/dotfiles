@@ -16,3 +16,4 @@ minimap-git-diff
 split-diff
 minimap-split-diff
 git-history
+symbols-tree-view
