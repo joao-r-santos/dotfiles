@@ -3,6 +3,7 @@ autocomplete-python
 platformio-ide-terminal
 Hydrogen
 hydrogen-launcher
+hydrogen-python
 MagicPython
 project-manager
 minimap
