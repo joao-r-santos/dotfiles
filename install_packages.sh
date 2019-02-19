@@ -31,6 +31,9 @@ sudo apt-get install atom audacious fbreader gimp postgresql transmission-common
 pip install magic-wormhole cheat
 #sudo apt install magic-wormhole
 
+# Python linters
+pip install flake8 pydocstyle isort bandit
+
 # Extra Programs
 #dropbox
 #google-chrome-stable
