@@ -19,3 +19,6 @@ markdown-scroll-sync
 last-cursor-position
 symbols-tree-view
 todo-show
+linter
+linter-flake8
+atom-isort
