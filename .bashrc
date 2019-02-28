@@ -164,6 +164,9 @@ cdsession() {
         cd "$(sed '/^#/d' ~/terminal_sessions | sed '/^$/d' | grep -i "${1}" | sed '1!d')"
     fi
 }
+sendtowin() {
+    rsync -avz "${1}" ~/Windows/Transfer/
+}
 
 # Add 'fuck' command to correct your previous console command
 eval $(thefuck --alias)
