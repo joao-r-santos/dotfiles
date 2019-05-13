@@ -4,10 +4,10 @@
 " Last change:	2016 Mar 25
 "
 " To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"             for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"           for OpenVMS:  sys$login:.vimrc
+"    for Unix and OS/2:  ~/.vimrc
+"    for Amiga:  s:.vimrc
+"    for MS-DOS and Win32:  $VIM\_vimrc
+"    for OpenVMS:  sys$login:.vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -239,12 +239,10 @@ endif
 
 " Add optional packages.
 "
-" The matchit plugin makes the % command work better, but it is not backwards
-" compatible.
+" The matchit plugin makes the % command work better, but it is not backwards compatible.
 packadd matchit
 
-" Set up powerline status bar
-set rtp+=~/miniconda2/lib/python2.7/site-packages/powerline/bindings/vim/
+" Set up powerline status bar option
 set laststatus=2
 " Change font on desktop computer
 "if has('gui_running')
