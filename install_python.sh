@@ -41,4 +41,4 @@ pip install --user pipenv magic-wormhole jedi
 pip install pytest nose
 
 # scientific packages
-pip install --user numpy scipy matplotlib ipython jupyter jupyterlab pandas sympy scikit-learn seaborn
+pip install --user numpy scipy matplotlib ipython jupyter jupyterlab pandas sympy scikit-learn seaborn statsmodels jupyter_contrib_nbextensions
