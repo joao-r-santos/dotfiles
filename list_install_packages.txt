@@ -35,6 +35,7 @@ powerline
 ps2eps
 ps2pdf
 psutils
+scala
 screen
 sed
 shellcheck

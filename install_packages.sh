@@ -11,7 +11,7 @@ sudo apt install bash-completion build-essential gnome-tweak-tool ttf-mscorefont
 sudo apt install aspell autojump bzip2 dos2unix fdupes git gitk gzip hyphen-en-us lmodern powerline screen sed socat tree unrar unzip wget xclip zip shellcheck thefuck
 
 # Compilers
-sudo apt install g++ gcc gfortran
+sudo apt install g++ gcc gfortran scala
 
 # pdf & image packages
 sudo apt install diffpdf eog evince imagemagick meld pdftk pdfshuffler xloadimage a2ps ps2eps ps2pdf psutils cups-pdf
