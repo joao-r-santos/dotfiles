@@ -11,6 +11,8 @@
     default = simple
 [pull]
     rebase = preserve
+[fetch]
+    prune = true
 [merge]
     tool = vimdiff
 [diff]
