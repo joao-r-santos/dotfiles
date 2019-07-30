@@ -16,7 +16,7 @@ exec "$SHELL"
 # INSTALL PYENV-VIRTUALENV
 git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv virtualenv-init -)"\nfi' >> ~/.bashrc
 
 exec "$SHELL"
 
