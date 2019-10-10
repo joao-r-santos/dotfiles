@@ -30,11 +30,14 @@ pyenv install miniconda3-latest
 pip install --upgrade pip
 pip install pip-tools
 
-python3 -m pip install --user pipx
-python3 -m userpath append ~/.local/bin
+python -m pip install --user pipx
+python -m userpath append ~/.local/bin
+
+# Self-contained python packages
+pipx install black
 
 # Python linters
-pip install flake8 pydocstyle isort bandit black
+pip install flake8 pydocstyle isort bandit
 
 # pip installs
 pip install --user pipenv magic-wormhole jedi

@@ -156,6 +156,9 @@ alias regexfind='find -regextype posix-extended -regex'
 # alias rmpyc='find . -type f -name "*.pyc" | xargs rm -f || true'
 alias rmpyc='find . -type f -name "*.pyc" -print -delete'
 
+# autoformatter
+alias black100="black --line-length 100 --skip-string-normalization"
+
 alias savesession='pwd >> ~/terminal_sessions'
 cdsession() {
     if [ -z "${1}" ]; then
@@ -169,7 +172,9 @@ sendtowin() {
 }
 
 # Add 'fuck' command to correct your previous console command
-eval $(thefuck --alias)
+if command -v thefuck 1>/dev/null 2>&1; then
+    eval $(thefuck --alias)
+fi
 #eval $(thefuck --alias --enable-experimental-instant-mode)
 
 # Conda environments
